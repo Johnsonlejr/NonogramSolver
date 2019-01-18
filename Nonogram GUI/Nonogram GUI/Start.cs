@@ -30,7 +30,7 @@ namespace WindowsFormsApplication1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            FileStream f = new FileStream("C:\\Users\\lajjr_000\\Documents\\Visual Studio 2015\\Projects\\Nonogram GUI\\Start\\save.txt", FileMode.Open);
+            FileStream f = new FileStream("save.txt", FileMode.Open);
             StreamReader reader = new StreamReader(f);
             int row, column;
 

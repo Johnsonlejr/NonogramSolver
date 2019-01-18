@@ -137,7 +137,7 @@ namespace WindowsFormsApplication1
 
         public void save()
         {
-            FileStream f = new FileStream("C:\\Users\\lajjr_000\\Documents\\Visual Studio 2015\\Projects\\Nonogram GUI\\Start\\save.txt", FileMode.Create);
+            FileStream f = new FileStream("save.txt", FileMode.Create);
             StreamWriter stream = new StreamWriter(f);
 
             stream.WriteLine(row);
@@ -165,7 +165,7 @@ namespace WindowsFormsApplication1
 
         private void load()
         {
-            FileStream f = new FileStream("C:\\Users\\lajjr_000\\Documents\\Visual Studio 2015\\Projects\\Nonogram GUI\\Start\\save.txt", FileMode.Open);
+            FileStream f = new FileStream("save.txt", FileMode.Open);
             StreamReader reader = new StreamReader(f);
 
             int count = 0;
